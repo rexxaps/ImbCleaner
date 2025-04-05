@@ -16,7 +16,7 @@ It removes temporary files, junk folders, cache files from popular apps, and sys
   - App-specific junk (Discord, Telegram, Chrome, Spotify, etc.)
 - Simple WPF GUI with progress bar and animated status
 - Auto-elevates to administrator if not already
-- Minimalist green-on-black hacker aesthetic 😎
+- Minimalist green-on-black hazcker aesthetic 😎
 
 ---
 
