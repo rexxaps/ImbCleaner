@@ -12,21 +12,21 @@ Write-Host @"
 
 $script:cleaningInProgress = $true
 
-function Show-LoadingAnimation {
-    $frames = @("Oo.", "oOo", ".oO", "o.o")
-    $i = 0
-    while ($script:cleaningInProgress) {
-        $frame = $frames[$i % $frames.Length]
-        $loadingLabel.Dispatcher.Invoke([action]{
-            $loadingLabel.Content = "Cleaning... " + $frame
-        })
-        Start-Sleep -Milliseconds 200
-        $i++
-    }
-    $loadingLabel.Dispatcher.Invoke([action]{
-        $loadingLabel.Content = "Cleanup complete!"
-    })
-}
+# function Show-LoadingAnimation {
+#     $frames = @("Oo.", "oOo", ".oO", "o.o")
+#     $i = 0
+#     while ($script:cleaningInProgress) {
+#         $frame = $frames[$i % $frames.Length]
+#         $loadingLabel.Dispatcher.Invoke([action]{
+#             $loadingLabel.Content = "Cleaning... " + $frame
+#         })
+#         Start-Sleep -Milliseconds 200
+#         $i++
+#     }
+#     $loadingLabel.Dispatcher.Invoke([action]{
+#         $loadingLabel.Content = "Cleanup complete!"
+#     })
+# }
 
 $null = Start-Job -ScriptBlock { Show-LoadingAnimation }
 
