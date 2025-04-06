@@ -113,10 +113,10 @@ $cleanBtn.Add_Click({
 
     # Extra cleaning
     $pathsToClean = @(
-        "$env:LOCALAPPDATA\Discord\Cache",
-        "$env:APPDATA\discord\Cache",
-        "$env:APPDATA\discordcanary\Cache",
-        "$env:APPDATA\discordptb\Cache",
+        # "$env:LOCALAPPDATA\Discord\Cache", # damn, discord dont work after this =)
+        # "$env:APPDATA\discord\Cache",
+        # "$env:APPDATA\discordcanary\Cache",
+        # "$env:APPDATA\discordptb\Cache",
         "$env:APPDATA\Telegram Desktop\tdata\user_data",
         "$env:LOCALAPPDATA\Google\Chrome\User Data\Default\Code Cache",
         "$env:LOCALAPPDATA\Google\Chrome\User Data\ShaderCache",
